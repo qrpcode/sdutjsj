@@ -1,0 +1,366 @@
+
+<!--
+2019年4月10日修改
+
+如有其他部门同学需要修改或提供相关内容
+请联系易班工作站技术部~~
+
+by QiRuipeng
+-->
+
+<html dir="ltr">
+<head>
+<meta content="text/html; charset=gb2313" http-equiv="Content-Type">
+<link rel="stylesheet" type="text/css" href="img/css/common.css">
+<link rel="stylesheet" type="text/css" href="img/css/tab.css">
+<link href="img/css/imgsay.css" rel="stylesheet" type="text/css" />
+
+<title>山东理工大学计算机科学与技术学院</title>
+
+<style type="text/css">
+    body,td,th {
+    font-family: "Microsoft YaHei", "微软雅黑", "宋体", sans-serif;}
+    #quick{
+        position:absolute;
+        left:16px;
+        top:620px;
+        width:140px;}
+</style>
+<link rel="stylesheet" type="text/css" href="img/css/index.vsb.css"/>
+<meta name="Description" content="山东理工大学计算机科学与技术学院有良好的教学、科研及实验设备条件，拥有计算机科学与技术学院教学楼和信息中心实验楼。设有计算中心、软件实训中心、计算机硬件实验室、通信工程实验中心、传媒技术实验中心，以及ACM实训、物联网开发、网络攻防等11个开放实验室。近年来，在智能系统、网络空间与信息安全、智能计算与信息处理、图形图像与信号处理、动画及广播影视制作、软件开发等领域，做了大量研究和开发工作，取得了丰硕的科学研究成果。近三年完成国家级、省部级科研课题20余项，与企业合作研究项目70余项，在研的科研项目40余项，有多个项目获得省部级奖励。" />
+<meta name="Keywords" content="山东理工大学,计算机科学与技术学院" />
+</head>
+
+
+<body>
+
+<!--顶部小条开始-->
+<div class="top">
+	<div class="container">
+		<div class="top-l">
+			<a href="https://www.sdut.edu.cn/"  target="_blank">山东理工大学官网</a>
+		</div>
+		<div class="top-search clearfix">
+			<div class="links">
+				<span class="home" id="miniheader-index"><a href="index.htm">网站首页</a></span>
+				<span id="op-links"><a href="http://210.44.176.42:8081/dmt/" target="_blank">数媒实践平台</a>
+                        /
+				<a href="http://sec.sdut.edu.cn" target="_blank">CTF竞赛</a>
+                        /
+				<a href="http://acm.sdut.edu.cn" target="_blank">ACM竞赛</a>
+						/
+				<a href="http://210.44.176.42/biye/" target="_blank">毕业设计</a>
+				</span>
+			</div>
+
+			<div class="links" style="width:150px;font-size:13px" frag="面板31">
+				<div frag="窗口31">
+					<div frag="窗口内容"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--顶部小条结束-->
+
+<!--导航栏开始-->
+<link href="img/css/link.css" rel="stylesheet" type="text/css" />
+
+<div class="header">
+	<div class="container">
+		<a href="/">
+		<h1 title="山东理工大学">山东理工大学</h1>
+		</a>
+	
+		<div style="padding-left:15px;padding-top:40px;line-height: 22px;font-size: 18px;" frag="面板1">
+    	    <div frag="窗口1">
+                <div frag="窗口内容"></div>
+            </div>
+        </div>
+		
+	</div>
+</div>
+<!--导航栏开始-->
+
+
+<!--滚播图CSS 开始-->
+<style type="text/css">
+div,ul,li,a,span,img{margin:0;padding:0;}
+li{list-style:none;}
+#slider{width:1200px;height:400px;margin:0% auto;position:relative;}
+.slider_list li{position:absolute;display:none;}
+.slider_list li:first-child{display:block;}
+.slider_icon{position:absolute;z-index:1;left:40%;bottom:20px;font-size:0;padding:4px 8px;border-radius:12px;background-color:hsla(0,0%,100%,.3);}
+.slider_icon i{display:inline-block;width:12px;height:12px;border-radius:50%;margin:0 5px;}
+.btn{background:#fff;}
+.arrow{display:none;width:30px;height:60px;background-color:rgba(0,0,0,.2);position:absolute;top:50%;margin-top:-30px;}
+.prve{left:0;}
+.next{right:0;}
+.arrow span{display:block;width:10px;height:10px;border-bottom:2px solid #fff;border-left:2px solid #fff;}
+.slider_left{margin:25px 0 0 10px;transform:rotate(45deg);}
+.slider_right{margin:25px 0 0 5px;transform:rotate(-135deg);}
+.arrow:hover{background:#444;}
+#slider:hover .arrow{display:block;}
+.btn_act{background:#db192a;}
+</style>
+<!--滚播图CSS 结束-->
+
+<!--滚播图js 开始-->
+<script type="text/javascript">
+$(function(){
+	var count = 0;
+	var $li = $("#slider>ul>li");
+	$(".next").click(function(){
+		count++;				
+		if(count == $li.length){
+			count =0;
+		}
+		$li.eq(count).fadeIn().siblings().fadeOut();
+		$(".slider_icon i").eq(count).addClass("btn_act").siblings().removeClass('btn_act');
+		console.log(count);
+	});
+	$(".prve").click(function(){
+		count--;
+		if(count == -1){
+			count = $li.length-1;
+		}
+		console.log(count);
+		$li.eq(count).fadeIn().siblings().fadeOut();
+		$(".slider_icon i").eq(count).addClass("btn_act").siblings().removeClass('btn_act');
+	});
+	$(".slider_icon i").mouseenter(function(){
+		$(this).addClass('btn_act').siblings().removeClass("btn_act");
+		$li.eq($(this).index()).fadeIn().siblings().fadeOut();
+		count = $(this).index();
+	});
+});
+</script>
+<!--滚播图js 结束-->
+
+<!--滚播内容 开始-->
+<div id="slider">
+	<ul class="slider_list">
+		<li><a href="https://lgwindow.sdut.edu.cn/_s72/_t1088/main.psp"><img src="img/img/1.png"></a></li>
+		<li><a href="https://jsjxy.sdut.edu.cn/3197/list.htm"><img src="img/img/2.png"></a></li>
+		<li><a href="https://jsjxy.sdut.edu.cn/3197/list.htm"><img src="img/img/3.png"></a></li>
+		<li><a href="https://jsjxy.sdut.edu.cn/3197/list.htm"><img src="img/img/4.png"></a></li>
+		<li><a href="https://jsjxy.sdut.edu.cn/3197/list.htm"><img src="img/img/5.png"></a></li>
+		<li><a href="https://jsjxy.sdut.edu.cn/3197/list.htm"><img src="img/img/6.png"></a></li>
+		<li><a href="https://jsjxy.sdut.edu.cn/3197/list.htm"><img src="img/img/7.png"></a></li>
+		<li><a href="https://jsjxy.sdut.edu.cn/3197/list.htm"><img src="img/img/8.png"></a></li>
+	</ul>
+	<div class="slider_icon">
+		<i class="btn btn_act"></i>
+		<i class="btn"></i>
+		<i class="btn"></i>
+		<i class="btn"></i>
+		<i class="btn"></i>
+		<i class="btn"></i>
+		<i class="btn"></i>
+		<i class="btn"></i>
+	</div>
+	<a href="javascript:;" class="arrow prve">
+		<span class="slider_left"></span>
+	</a>
+	<a href="javascript:;" class="arrow next">
+		<span class="slider_right"></span>
+	</a>
+</div>
+<!--滚播内容 结束-->
+
+<!--学院新闻模块 开始-->
+<div class="container col-list">
+	<div class="box notice" style="width:400px;" frag="面板32">
+		<div class="menu">
+			<i></i>
+			<h3>学院新闻</h3>
+		<small>College News</small>
+		</div>
+
+		<div class="slider_list" frag="窗口32">
+			<div frag="窗口内容"></div>
+		</div>
+	</div>
+
+	<div class="box notice">
+		<div class="menu">
+			<a href="http://jsjxy.sdut.edu.cn/3225/list.htm" target="_blank">更多&gt;&gt;</a>
+		</div>
+		<ul class="list">
+			<div frag="窗口33">
+				<div frag="窗口内容">
+					<!--[InfoCycleBegin]-->
+					<li><div class="title">{标题}</div><strong>{发布时间}</strong></li>
+					<!--[InfoCycleEnd]-->
+				</div>
+			</div>
+		</ul>
+	</div>
+	
+	<div class="box events" frag="面板35">
+		<div frag="窗口35">
+			<div class="menu">
+				<i></i>
+				<h3><span frag="标题"><span frag="标题内容">通知公告</span></span></h3>
+				<small>Notice Bulletin</small>
+				<div frag="按钮" type="更多">
+					<span class="more_text" frag="按钮内容">更多</span>
+				</div>
+			</div>
+
+			<div class="list">
+				<div frag="窗口内容">
+					<!--[InfoCycleBegin]-->
+					<li><div class="title">{标题}</div><strong>{发布时间}</strong></li>
+					<!--[InfoCycleEnd]-->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="last-screen">
+	<div class="container">
+	<div class="box notice" style="width:320px;">
+		<div class="menu">
+			<i></i>
+			<h3>团学新闻</h3>
+			<small>Regiment Journalism</small><a href="https://jsjxy.sdut.edu.cn/3204/list.htm" target="_blank">更多&gt;&gt;</a>
+		</div>
+
+		<ul class="list" frag="面板38">
+			<div frag="窗口38">
+				<div frag="窗口内容">
+					<!--[InfoCycleBegin]-->
+                    <li><div class="title">{标题}</div><strong>{发布时间}</strong></li>
+                    <!--[InfoCycleEnd]-->
+                </div>
+			</div>
+		</ul>
+	</div>
+	<div class="box events" style="width:320px;">
+		<div class="menu">
+			<i></i>
+			<h3>教学科研</h3>
+			<small>Scientific research</small><a href="https://jsjxy.sdut.edu.cn/3204/list.htm" target="_blank">更多&gt;&gt;</a>
+		</div>
+
+		<ul class="list" frag="面板37">
+			<div frag="窗口37">
+				<div frag="窗口内容">
+					<!--[InfoCycleBegin]-->
+                    <li><div class="title">{标题}</div><strong>{发布时间}</strong></li>
+                    <!--[InfoCycleEnd]-->
+                </div>
+			</div>
+		</ul>
+	</div>
+	
+	<div class="box events" style="width:320px;">
+		
+		<div class="menu">
+		<i></i>
+			<h3>就业信息</h3>
+			<small>Obtain employment</small>
+		<a href="https://jsjxy.sdut.edu.cn/3195/list.htm" target="_blank">更多&gt;&gt;</a>
+		</div>
+		<ul class="list" frag="面板36">
+			<div frag="窗口36">
+				<div frag="窗口内容">
+					<!--[InfoCycleBegin]-->
+                    <li><div class="title">{标题}</div><strong>{发布时间}</strong></li>
+                    <!--[InfoCycleEnd]-->
+                </div>
+			</div>
+		</ul>
+	</div>
+
+	</div>
+</div>
+
+<!--尾部开始-->
+<div class="content content6" style="display: block;">
+	<div class="footer-wrapper" style="height: 120px">
+		<div class="footer" style="height: 120px">
+			<div class="map">
+				<div class="about map-item" style="width:285px;line-height:16px;">
+					<h5>友情链接</h5>
+					<div class="footer-select">
+					  <select id="FriendLink" class="footer_sel">
+						<option selected value="">学校常用地址</option>
+						<option value="http://jwch.sdut.edu.cn/">山东理工大学</option>
+						<option value="http://jwch.sdut.edu.cn/pages/zhengfang">山东理工大学教务处</OPTION>
+						<option value="http://etc.sdut.edu.cn/">教务处管理系统</option>
+						<option value="http://youth.sdut.edu.cn/">青春在线</option>
+						<option value="http://www.lgqn.cn/">理工青年</option>
+						<option value="http://sc.chinaz.com">易班借教室系统</option>
+						<option value="http://cnki.net/">中国知网</OPTION>
+						<option value="https://www.chsi.com.cn">学信网</option>
+						<option value="http://www.ccyl.org.cn">中国共青团</option>
+						<option value="http://www.ccyl.org.cn/">教育部</option>
+					  </select>
+					</div>
+					<script type=text/javascript src="img/js/newbase.js"></script>
+					<!--<p style="line-height:30px;">
+						<?php //echo $sys['link']; ?>
+					</p>-->
+				
+				</div>
+
+				<div class="contact-us map-item" style="width:195px;margin-left: -10px; padding-right: 10px;">
+					<h5 style="height:30px;">联系我们</h5>
+					<div class="contact-us map-item" style="width:305px;margin-left: -10px; padding-right: 10px;">
+					<p>
+						电话：0533-2783479
+					</p>
+					<p>
+						邮箱：jsjxy@sdut.edu.cn
+					</p>
+					</div>
+				</div>
+				
+				<div class="contact-us map-item" style="width:305px;margin-left: -10px;margin-top:7px; padding-right: 10px;">
+					<p>
+					</p>
+					<p>
+						地址：山东理工大学西校区9号教学楼
+					</p>
+					<p>
+						邮编：255049
+					</p>
+				</div>
+				<div class="bd-code map-item" style="width:100px;margin-top: -10px;">
+					<img src="img/img/wx.jpg" style="width:70px;height:70px;">
+					<div style="text-indent: 0">
+						官方公众号
+					</div>
+				</div>
+				<div class="cat-code map-item" style="width:100px;margin-top: -10px;">
+					<img src="img/img/weibo.png"  style="width:66px;height:66px;">
+					<div style="text-indent: 0">
+						官方微博
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--尾部结束-->
+
+
+
+<script>
+    var oQuick = document.getElementById('quick');
+        window.onscroll = function () {
+            oScrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+            if (oScrollTop > 340) {
+                oQuick.style.top = 280 + oScrollTop + 'px';
+            } else {
+                oQuick.style.top = '620px';
+            }
+        }
+</script>
+<!--加载必要的JS文件结束-->
+</body>
+</html>

@@ -1,0 +1,206 @@
+.wrapper {
+    padding-top: 10px;
+}
+
+
+.wrapper {
+    min-width: 990px;
+    font-size: 14px;
+    _zoom: 1;
+}
+
+.crumb {
+    margin-bottom: 5px;
+}
+
+.crumb {
+    height: 14px;
+    line-height: 14px;
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+
+.col_a {
+    width: 730px;
+    float: left;
+}
+
+.lightBorder {
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    position: relative;
+    zoom: 1;
+    z-index: 1;
+    font-family: microsoft yahei, "Tahom";
+    width: 100%;
+	margin-bottom: 10px;
+}
+
+.blockHeader {
+    height: 40px;
+    line-height: 18px;
+    padding: 13px 16px;
+    background-color: #fff;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.headerText {
+    border-left: 4px solid #4b94f5;
+    padding-left: 10px;
+    float: left;
+    line-height: 1.1;
+}
+
+.help_p18 {
+    padding: 0 18px;
+	
+}
+
+ul, li, ol {
+    list-style: none outside none;
+}
+
+.help_searchUl li a {
+    display: block;
+    padding-left: 14px;
+    _width: 678px;
+    height: 35px;
+    line-height: 35px;
+    color: #666;
+    border-bottom: 1px dashed #eaeaea;
+    background: url(http://img2.2345.com/jifenimg/images/common/yuandian.gif) no-repeat left center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.fenye_box {
+    text-align: center;
+    letter-spacing: -4px;
+    line-height: 28px;
+}
+
+.pb15 {
+    padding-bottom: 15px;
+}
+
+.pt15 {
+    padding-top: 15px;
+}
+
+.fenye_box a {
+    font-size: 14px;
+    letter-spacing: 0;
+    display: inline-block;
+    margin-left: 2px;
+    padding: 0 10px;
+    line-height: 26px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+    vertical-align: middle;
+    color: #333;
+    text-decoration: none;
+}
+
+.fenye_box em {
+    font-size: 14px;
+    letter-spacing: 0; 
+    vertical-align: middle;
+}
+
+.mr5 {
+    margin-right: 5px;
+}
+
+.ml5 {
+    margin-left: 5px;
+}
+
+.row {
+    width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rightList {
+    padding: 10px 18px;
+    font-size: 14px;
+    line-height: 28px;
+	color: #666;
+}
+
+.rightList a{
+	color: #666;
+}
+
+.wrapper {
+    padding-top: 10px;
+}
+
+.wrapper {
+    min-width: 990px;
+    font-size: 14px;
+    _zoom: 1;
+}
+
+.fenye_box .fenye_txt {
+    width: 30px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    line-height: 26px;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+.col_b {
+    width: 248px;
+    float: right;
+}
+
+.kefuImg {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    height: 78px;
+    background-image: url(http://img2.2345.com/jifenimg/images/index/v5/kefu.jpg);
+    color: #999;
+    position: relative;
+}
+
+.telNum {
+    text-align: center;
+    padding: 2px;
+    font-size: 12px;
+    color: #999;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+p {
+	margin: 0;
+    padding: 0;
+}
+
+.blockHeader {
+    height: 20px;
+    line-height: 18px;
+    padding: 13px 16px;
+    background-color: #fff;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+}
+
+a.click {
+    background-color: #2d87cc;
+    border: 1px solid #2d87cc;
+	color:#666;
+}
+
+.fenye_box a.click {
+    color: #FFF;
+}

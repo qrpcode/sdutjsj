@@ -1,0 +1,142 @@
+#user_main
+{
+    width:1200px;
+    height:550px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #FFFFFF;
+    margin-top:1px;
+       
+}
+
+#left
+{
+    width:216px;
+    height:1000px;
+    float:left;
+    text-align:left;
+    border:1px solid #B0D8FF;
+}
+
+#leftadmin
+{
+    width:216px;
+    height:800px;
+    float:left;
+    text-align:left;
+    border:1px solid #B0D8FF;
+}
+
+
+#left ul
+{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    text-align:left;
+
+}
+#left ul li
+{
+
+    text-align:left;
+ 
+    
+    
+}
+#left ul li.title
+{
+    width:215px;
+    height:30px;
+    background-color: #B0D8FF;
+    color: #003060;
+    font-size:15px;
+}
+
+#left ul li a
+{
+    line-height: 30px;
+    text-decoration:none;
+    display: block;
+    width:200px;
+    height:25px;
+    font-size:14px;
+    color: #000000;
+    background-color: #FFFFFF;
+    font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+	font-weight:normal;
+}
+
+#left ul li a:hover
+{
+    font-size:14px;
+    color: red;
+    background-color: #DFEFFF;
+}
+
+
+
+
+#right
+{
+    width:968px;
+    height:550px;
+    float:right;
+}
+
+#right_top
+{
+    width:968px;
+    height:26px;
+    background-color:#B0D8FF;
+    text-align:left;
+    color: #003060;
+    font-size:14px;
+}
+#right_top a
+{
+    text-decoration: none;
+    background:none;
+    color: #003060;
+}
+
+
+
+#right_main
+{
+    font-size:14px;
+    color: #5A5A5A;
+    text-align:left;
+    margin-top:5px;
+    width:968px;
+    height:780px;
+    
+}
+
+
+
+
+#urltop a
+{
+    background:none;
+    text-decoration:none;
+    color:red;
+    font-size:12px;
+    padding-right:20px;
+    
+}
+
+
+
+
+
+
+#bottom
+{
+    width:1200px;
+    height:80px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #EEEEEE;
+}
+

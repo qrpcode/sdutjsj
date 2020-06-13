@@ -1,0 +1,24 @@
+
+
+#TopTipHolder {
+	height:0;
+	overflow:hidden;
+	position:relative
+}
+#TopTip {
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	background:#FFFF00;
+	color:#FF0000;
+	font-weight:bold;
+	font-size: 16px;
+}
+#TopTipClose {
+	width:85px;
+	height:19px;
+	background:url(../img/close3.gif) no-repeat;
+	position:absolute;
+	right:10px;
+	top:10px
+}

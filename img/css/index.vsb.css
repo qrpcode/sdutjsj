@@ -1,0 +1,11 @@
+    #c60551 ul {list-style: none; margin: 0px; padding: 0px;} 
+    #c60551 ul li a {font-family: 黑体;text-decoration: none;font-weight:bold; color:#fff; display:block; width:112px; height:36px; line-height:36px; text-align:center; background:url(/system/resource/images/nav/imgnav_vsb_level1_bg_1.gif) 0 0 no-repeat;  font-size:14px;} 
+    #c60551 ul li { float:left; margin-left:0px;} 
+    #c60551 ul li a:hover {background:url(/system/resource/images/nav/imgnav_vsb_level1_bg_2.gif) 0 0 no-repeat;}
+    #c60551 ul li a#current { background:url(/system/resource/images/nav/imgnav_vsb_level1_bg_2.gif) 0 0 no-repeat; font-weight:bold; color:#fff;}
+    #c60551 ul li ul { border:0px solid #ccc; display:none;} 
+    #c60551 ul li ul li {font-family: 黑体;text-decoration: none;font-weight:bold;font-size:14px; float:none;  margin:0;}
+    #c60551 ul li ul li a {width:112px;height:28px;line-height:28px; text-align:center; background:url(/system/resource/images/nav/imgnav_vsb_level2_bg_1.png); color:#000000;} 
+    #c60551 ul li ul li a:hover { background:url(/system/resource/images/nav/imgnav_vsb_level2_bg_1.jpg); color:#000000;}  
+    #c60551 ul li:hover ul { display:block;z-index:9999999; position:absolute;}
+    #c60551 ul li.sfhover ul { display:block;}

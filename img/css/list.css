@@ -1,0 +1,17 @@
+a,div,img,li,span,ul{margin:0;padding:0}
+li{list-style:none}
+#slider{width:1200px;height:450px;margin:0 auto;position:relative}
+.slider_list li{position:absolute;display:none}
+.slider_list li:first-child{display:block}
+.slider_icon{position:absolute;z-index:1;left:40%;bottom:20px;font-size:0;padding:4px 8px;border-radius:12px;background-color:hsla(0,0%,100%,.3)}
+.slider_icon i{display:inline-block;width:12px;height:12px;border-radius:50%;margin:0 5px}
+.btn{background:#fff}
+.arrow{display:none;width:30px;height:60px;background-color:rgba(0,0,0,.2);position:absolute;top:50%;margin-top:-30px}
+.prve{left:0}
+.next{right:0}
+.arrow span{display:block;width:10px;height:10px;border-bottom:2px solid #fff;border-left:2px solid #fff}
+.slider_left{margin:25px 0 0 10px;transform:rotate(45deg)}
+.slider_right{margin:25px 0 0 5px;transform:rotate(-135deg)}
+.arrow:hover{background:#444}
+#slider:hover .arrow{display:block}
+.btn_act{background:#db192a}
